@@ -5,10 +5,9 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="456.0" prefWidth="685.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="456.0" prefWidth="685.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.morsecode.Controller">
    <children>
-      <TextArea layoutX="131.0" layoutY="84.0" onKeyTyped="#updateMorseCode" prefHeight="58.0" prefWidth="422.0" promptText="Hello" text="input morse here&#10;">
+      <TextArea layoutX="131.0" layoutY="84.0" onKeyTyped="#updateMorseCode" prefHeight="58.0" prefWidth="422.0" promptText="Hello" text="&#10;">
          <font>
             <Font size="18.0" />
          </font>
