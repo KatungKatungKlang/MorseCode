@@ -1,18 +1,22 @@
 package com.example.morsecode;
 
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
+
 import java.util.HashMap;
 import java.util.Map;
 
 
 public class MorseCodeTranslator {
-    Map<String, Character> mapping = new HashMap<String, Character>();
+
+    HashMap<Character, String> mapping = new HashMap<Character, String>();
+
+    char[] letter = {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm',
+            'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', ' '};
 
     String[] morse = {".-", "-...", "-.-.", "-..", ".", "..-.", "--.", "....", "..", ".---", "-.-", ".-..",
             "--", "-.", "---", ".--.", "--.-", ".-.", "...", "-", "..-", "...-", ".--", "-..-", "-.--", "--..",
             "-----", ".----", "..---", "...--", "....-", ".....", "-....", "--...", "---..", "----.", "/"};
-
-    char[] letter = {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm',
-            'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', ' '};
 
     public MorseCodeTranslator() {
         setupMap();
@@ -20,12 +24,12 @@ public class MorseCodeTranslator {
 
     private void setupMap () {
         for (int i = 0; i < letter.length; i++) {
-            mapping.put(morse[i], letter[i]);
+            mapping.put(letter[i], morse[i]);
         }
     }
 
-    public String translateToEnglish (String text){
-        char[] characters = toString().toCharArray();
+    public String translateToEnglish (String string){
+        char[] characters = string.toCharArray();
         StringBuilder morseString = new StringBuilder();
 
         for (char character : characters) {

@@ -1,0 +1,15 @@
+.textarea {
+    -fx-padding: 3;
+    -fx-border-radius: 5 5 5 5;
+    -fx-background-radius: 10 10 0 0;
+    -fx-background-color: #2969c0;
+    -fx-background-image: "C:\Users\User\OneDrive\Pictures\FaceApp_1646161849783.jpg";
+}
+
+.button{
+    -fx-text-fill: rgb(49, 89, 23);
+    -fx-border-color: rgb(49, 89, 23);
+    -fx-border-radius: 50 50 50 50;
+    -fx-background-radius: 10 10 0 0;
+    -fx-padding: 3 6 6 6;
+}
