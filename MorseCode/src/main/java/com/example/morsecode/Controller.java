@@ -3,6 +3,7 @@ package com.example.morsecode;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
@@ -17,11 +18,7 @@ public class Controller {
     private TextArea textInput;
 
     @FXML
-    private Button playAudio;
-    @FXML
-    private Button swapInput;
-    @FXML
-    private Button refreshInput;
+    private Button playAudio, swapInput, clearInput;
 
     @FXML
     private TextArea textOutput;
@@ -30,7 +27,14 @@ public class Controller {
 
     @FXML
     void updateMorseCode(KeyEvent event) {
-        textOutput.setText(morseCodeTranslator.translateToEnglish(textInput.getText()));
+        textOutput.setText(morseCodeTranslator.abc2morse(textInput.getText()));
     }
+    @FXML
+    void outputClicked(){
+        Alert errorAlert = new Alert(Alert.AlertType.ERROR);
+        errorAlert.setHeaderText("Input not valid");
+        errorAlert.setContentText("Cannot type in output field");
+        errorAlert.showAndWait(); //alert als er in output getypt word
 
+    }
 }
