@@ -7,13 +7,13 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyTyped="#outputClicked" prefHeight="543.0" prefWidth="961.0" style="-fx-background-color: #0486d6;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.morsecode.Controller">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyTyped="#outputClicked" prefHeight="543.0" prefWidth="961.0" style="-fx-background-color: #81c14d;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.morsecode.Controller">
    <children>
-      <TextArea fx:id="textInput" layoutX="181.0" layoutY="124.0" onKeyTyped="#updateMorseCode" prefHeight="82.0" prefWidth="598.0" promptText="Enter text to translate" style="-fx-background-radius: 10; -fx-background-color: #59fff4;" styleClass="textarea" stylesheets="@styles.css">
+      <TextArea fx:id="textInput" layoutX="181.0" layoutY="124.0" onKeyTyped="#updateMorseCode" prefHeight="82.0" prefWidth="598.0" promptText="Enter text to translate" style="-fx-background-radius: 10; -fx-background-color: #048713;" styleClass="textarea" stylesheets="@styles.css">
          <font>
             <Font name="Serif Regular" size="18.0" />
          </font></TextArea>
-      <TextArea fx:id="textOutput" layoutX="181.0" layoutY="277.0" onKeyPressed="#outputClicked" onMousePressed="#outputClicked" prefHeight="82.0" prefWidth="598.0" style="-fx-background-radius: 10; -fx-background-color: #59fff4; -fx-border-radius: 10;" styleClass="textarea" stylesheets="@styles.css">
+      <TextArea fx:id="textOutput" layoutX="181.0" layoutY="277.0" onKeyPressed="#outputClicked" onMousePressed="#outputClicked" prefHeight="82.0" prefWidth="598.0" style="-fx-background-radius: 10; -fx-background-color: #048713; -fx-border-radius: 10;" styleClass="textarea" stylesheets="@styles.css">
          <font>
             <Font name="Serif Regular" size="18.0" />
          </font></TextArea>
@@ -31,17 +31,17 @@
             <Font name="Serif Regular" size="14.0" />
          </font></Label>
       <ProgressBar fx:id="audioProgressBar" layoutX="297.0" layoutY="396.0" prefHeight="18.0" prefWidth="366.0" progress="0.0" />
-      <Button fx:id="playAudio" layoutX="447.0" layoutY="432.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="65.0" style="-fx-background-color: #86d3ff; -fx-alignment: center;" stylesheets="@styles.css" text="Play">
+      <Button fx:id="playAudio" layoutX="447.0" layoutY="432.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="65.0" style="-fx-background-color: #0da63e; -fx-alignment: center;" stylesheets="@styles.css" text="Play" textFill="#7bb949e0">
          <font>
-            <Font name="Yu Gothic Regular" size="12.0" />
+            <Font name="Yu Gothic Bold" size="12.0" />
          </font></Button>
-      <Button fx:id="swapInput" layoutX="334.0" layoutY="232.0" mnemonicParsing="false" style="-fx-background-color: #86d3ff;" stylesheets="@styles.css" text="Swap" textFill="#86d3ff" wrapText="true">
+      <Button fx:id="swapInput" layoutX="334.0" layoutY="232.0" mnemonicParsing="false" style="-fx-background-color: #0da63e;" stylesheets="@styles.css" text="Swap" textFill="#0da63e">
          <font>
-            <Font name="Yu Gothic Regular" size="12.0" />
+            <Font name="Yu Gothic Bold" size="12.0" />
          </font></Button>
-      <Button fx:id="clearInput" layoutX="565.0" layoutY="232.0" mnemonicParsing="false" style="-fx-background-color: #86d3ff;" stylesheets="@styles.css" text="Clear" textFill="#59fff4cc">
+      <Button fx:id="clearInput" layoutX="565.0" layoutY="232.0" mnemonicParsing="false" style="-fx-background-color: #0da63e;" stylesheets="@styles.css" text="Clear" textFill="#0da63ecc">
          <font>
-            <Font name="Yu Gothic Regular" size="12.0" />
+            <Font name="Yu Gothic Bold" size="12.0" />
          </font></Button>
    </children>
 </AnchorPane>
