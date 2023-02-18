@@ -29,6 +29,5 @@ public class Controller {
         errorAlert.setHeaderText("Input not valid");
         errorAlert.setContentText("Cannot type in output field");
         errorAlert.showAndWait(); //alert als er in output getypt word
-
     }
 }

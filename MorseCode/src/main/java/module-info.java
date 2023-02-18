@@ -2,6 +2,7 @@ module com.example.morsecode {
     requires javafx.controls;
     requires javafx.fxml;
 
+    requires VirtualizedFX;
 
     opens com.example.morsecode to javafx.fxml;
     exports com.example.morsecode;
